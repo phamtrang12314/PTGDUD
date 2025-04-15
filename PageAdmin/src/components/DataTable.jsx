@@ -24,7 +24,7 @@ const DataTable = ({ data, loading, setOrders, setStats }) => {
 
   const handleSave = async (updatedOrder) => {
     try {
-      const response = await fetch(`https://67ec9394aa794fb3222e224b.mockapi.io/report/${updatedOrder.id}`, {
+      const response = await fetch(`https://67fe752058f18d7209ee4cf5.mockapi.io/my_custom_report/${updatedOrder.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
