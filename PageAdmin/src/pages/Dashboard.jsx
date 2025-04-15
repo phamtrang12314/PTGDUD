@@ -34,7 +34,7 @@ const Dashboard = () => {
       let response;
       if (newOrder.id) {
         response = await fetch(
-          `https://67ec9394aa794fb3222e224b.mockapi.io/report/${newOrder.id}`,
+          `https://67fe752058f18d7209ee4cf5.mockapi.io/my_custom_report/${newOrder.id}`,
           {
             method: "PUT",
             headers: {
@@ -45,7 +45,7 @@ const Dashboard = () => {
         );
       } else {
         response = await fetch(
-          "https://67ec9394aa794fb3222e224b.mockapi.io/report",
+          "https://67fe752058f18d7209ee4cf5.mockapi.io/my_custom_report",
           {
             method: "POST",
             headers: {
@@ -91,7 +91,7 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://67ec9394aa794fb3222e224b.mockapi.io/report"
+          "https://67fe752058f18d7209ee4cf5.mockapi.io/my_custom_report"
         );
 
         if (!response.ok) {
